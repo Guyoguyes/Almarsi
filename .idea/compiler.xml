@@ -2,12 +2,29 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="almarsi" />
+        <module name="business" />
+        <module name="business_service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="business" target="17" />
+      <module name="business1" target="17" />
+      <module name="business2" target="1.7" />
+      <module name="business3" target="17" />
+      <module name="business4" target="17" />
+      <module name="untitled" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="business" options="" />
+      <module name="business3" options="" />
+      <module name="business_service" options="" />
+    </option>
   </component>
 </project>
